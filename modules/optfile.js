@@ -14,6 +14,7 @@ module.exports = {
         })
     },
     readImg(path, res) {
+        res.writeHead(200, {'Content-Type': 'image/jpeg'});
         fs.readFile(path, 'binary', function(err, file){
             if(err){
                 console.log(err);

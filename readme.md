@@ -33,6 +33,29 @@ module.exports输出外部函数
 
 7. 读图片   
 
+8. 路由改造   
+
+9. 捕获异常   
+
+10. 参数接收
+- get方式 
+  rdata = url.parse(req.url,true).query // 返回参数json对象   
+
+- post方式（参数异步返回）  
+```js
+  var post = ''; //暂存请求体信息
+  req.on('data', function(chunk){   //通过req的data事件监听函数，每当接受到请求体的数据，就累加到post变量中      
+      post += chunk;
+  });
+  req.on('end', function(){   //在end事件触发后，通过querystring.parse将post解析为真正的POST请求格式，然后向客户端返回。    
+    post = querystring.parse(post);
+    console.log('email:'+post['email']+'\n');        
+  });
+
+11. 正则表达式
+
+12. 动态网页
+
 
 
 

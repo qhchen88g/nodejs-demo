@@ -8,5 +8,23 @@
 </head>
 <body>
     <h1>这是登录页</h1>
+    <h2>
+        收到的email是{email},<br/>
+        收到的密码是{pwd}
+    </h2>
+    <br/>
+    <form action="./login" method="post">
+        <ul>
+            <li>
+                <label>email：</label>
+                <input type="text" name="email" />
+            </li>
+            <li>
+                <label>密码</label>
+                <input type="password" name="pwd" />
+            </li>
+        </ul>
+        <input type="submit" value="登录"/>
+    </form>
 </body>
 </html>
