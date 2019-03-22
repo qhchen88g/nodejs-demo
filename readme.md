@@ -2,7 +2,7 @@
 [学习地址](https://study.163.com/course/courseMain.htm?courseId=1003228034&_trace_c_p_k2_=6943b840a6f246daa22ba8fabf613467)   
 
 1. hello, 创建服务   
-<code> http.createServer、 response.writeHead、 response.write、 response.end 
+<code> http.createServer、 response.writeHead、 response.write、 response.end </code>
 ```js
 const http = require('http');
 http.createServer(function(request, response){
@@ -22,7 +22,20 @@ module.exports输出外部函数
 
 3. 调用模块 类继承   
 
-4. 路由   
+4. 路由  
+
+5. 读文件   
+- require('fs')   
+- fs.readFileSync 、 fs.readFile     
+
+6. 写文件   
+- fs.writeFileSync 、 fs.writeFile   
+
+7. 读图片   
+
+
+
+
 
 
 
